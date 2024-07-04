@@ -6362,3 +6362,9 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+@media (max-width: 575px) {
+    #longseparator {
+        width: 60vw;
+    }
+}
