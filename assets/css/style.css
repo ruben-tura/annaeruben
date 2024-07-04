@@ -3375,19 +3375,19 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
-        height: 800px
+        height: 94%;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
-        height: 800px
+        height: 94%;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
-        height: 780px;
+        height: 94%;
         width: 95%
     }
 }
@@ -3395,7 +3395,7 @@ hr {
 @media (max-width: 575px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
         width: 90%;
-        height: 778px
+        height: 94%;
     }
 }
 
