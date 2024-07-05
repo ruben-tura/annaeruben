@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!--<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
 </head>
 <body>
 <!-- Preloader Start -->
@@ -52,18 +52,15 @@
                             <!-- Main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>                              
-                                    <ul id="navigation">                                                          
+                                    <ul id="navigation">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="menu.html">Menu</a></li>
-                                        <li><a href="getting-there.html">Come arrivare</a></li>
-                                        <!-- <li><a href="blog.html">Informazioni utili</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="index.html#contact-us">Contattaci</a></li>
+                                        <li class="lang-it"><a href="getting-there.html">Come arrivare</a></li>
+                                        <li class="lang-en"><a href="getting-there.html">How to get here</a></li>
+                                        <li class="lang-it"><a href="index.html#contact-us">Contattaci</a></li>
+                                        <li class="lang-en"><a href="index.html#contact-us">Contact us</a></li>
+                                        <li><button onclick="setEnglish()" class="flag"><span class="fi fi-gb"></span></button></li>
+                                        <li><button onclick="setItalian()" class="flag"><span class="fi fi-it"></span></button></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -84,43 +81,57 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-70">
-                        <h2><i class="fas fa-map-marked-alt"></i> Come arrivare a Palazzo Marcosanti</h2>
+                        <h2 class="lang-it"><i class="fas fa-map-marked-alt"></i> Come arrivare a Palazzo Marcosanti</h2>
+                        <h2 class="lang-en"><i class="fas fa-map-marked-alt"></i> How to get to Palazzo Marcosanti</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
                         <!-- Start of plane section -->
-                        <h3><i class="fas fa-plane"></i> Aereo</h3>
+                        <h3 class="lang-it"><i class="fas fa-plane"></i> Aereo</h3>
+                        <h3 class="lang-en"><i class="fas fa-plane"></i> Plane</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
-                        <p>Gli aeroporti più comodi per arrivare a Palazzo Marcosanti sono l'aeroporto di <b>Bologna (BLQ)</b> e l'aeroporto di <b>Rimini (RMI)</b>.</p>
-                        <p>L'aeroporto di <b>Forlì (FRL)</b> è anche un'ottima scelta, ammesso di trovare voli utili.</p>
+                        <p class="lang-it">Gli aeroporti più comodi per arrivare a Palazzo Marcosanti sono l'aeroporto di <b>Bologna (BLQ)</b> e l'aeroporto di <b>Rimini (RMI)</b>.</p>
+                        <p class="lang-en">The best airports to get to Palazzo Marcosanti are <b>Bologna (BLQ)</b> and <b>Rimini (RMI)</b>.</p>
+                        <p class="lang-it">L'aeroporto di <b>Forlì (FRL)</b> è anche un'ottima scelta, ammesso di trovare voli utili.</p>
+                        <p class="lang-en">The airport in <b>Forlì (FRL)</b> is a good choice as well, but there could be less flights.</p>
                         <br>
                         <!-- End of plane section -->
                         <!-- Start of train section -->
-                        <h3><i class="fas fa-train"></i> Treno</h3>
+                        <h3 class="lang-it"><i class="fas fa-train"></i> Treno</h3>
+                        <h3 class="lang-en"><i class="fas fa-train"></i> Train</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
-                        <p>La stazione dei treni più vicina a Palazzo Marcosanti è quella di <b>Santarcangelo</b>.</p>
+                        <p class="lang-it">La stazione dei treni più vicina a Palazzo Marcosanti è quella di <b>Santarcangelo</b>.</p>
+                        <p class="lang-en">The closest train station to Palazzo Marcosanti is <b>Santarcangelo</b>.</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7024.785571321483!2d12.451793912201179!3d44.06993522525689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc096b371114f%3A0x9bf0865f40a20415!2sSantarcangelo%20Di%20Romagna!5e1!3m2!1sen!2sit!4v1720098973225!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>Di fronte alla stazione si trova la fermata dell'autobus, dove poter prendere la linea 166 fino alla fermata Paganini, a pochi passi dalla destinazione.</p>
+                        <p class="lang-it">Di fronte alla stazione si trova la fermata dell'autobus, dove poter prendere la linea 166 fino alla fermata Paganini, a pochi passi dalla destinazione.</p>
+                        <p class="lang-en">In front of the train station you can find the bus stop, where you can get on the bus 166 until the Paganini stop, just a short walk from the destination.</p>
                         <br>
                         <!-- End of train section -->
                         <!-- Start of public transport section -->
-                        <h3><i class="fa-solid fa-bus"></i> Mezzi pubblici</h3>
+                        <h3 class="lang-it"><i class="fa-solid fa-bus"></i> Mezzi pubblici</h3>
+                        <h3 class="lang-en"><i class="fa-solid fa-bus"></i> Public transport</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
-                        <p>Per arrivare comodamente a Palazzo Marcosanti, basta prendere l'autobus numero 166 da Santarcangelo.</p>
-                        <p>Il 166 si può prendere dalla fermata Mazzini-Cabina, in centro a Santarcangelo, oppure anche dalla fermata della stazione dei treni di Santarcangelo, fino alla fermata Paganini, a pochi passi dal Palazzo.</p>
+                        <p class="lang-it">Per arrivare comodamente a Palazzo Marcosanti, basta prendere l'autobus numero 166 da Santarcangelo.</p>
+                        <p class="lang-en">To easily arrive to Palazzo Marcosanti, you need to take the bus 166 from Santarcangelo.</p>
+                        <p class="lang-it">Il 166 si può prendere dalla fermata Mazzini-Cabina, in centro a Santarcangelo, oppure anche dalla fermata della stazione dei treni di Santarcangelo, fino alla fermata Paganini, a pochi passi dal Palazzo.</p>
+                        <p class="lang-en">You can take the 166 from the Mazzini-Cabina stop, in the town centre of Santarcangelo, or, alternatively, from the Santarcangelo train station, until the Paganini stop, just a short walk from the destination.</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d18472.429352604762!2d12.448446262211858!3d44.06199894407913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x132cbf8582747405%3A0x4079b0bfcbc73e0!2sSantarcangelo%20di%20Romagna%2C%20Province%20of%20Rimini!3m2!1d44.0637152!2d12.452530399999999!4m5!1s0x132cbfebe082d4bb%3A0xe0d9b43db13b7af4!2sPalazzo%20Marcosanti%2C%20Via%20Ripa%20Bianca%2C%20441%2C%2047824%20Poggio%20Berni%20RN!3m2!1d44.0365038!2d12.4189349!5e1!3m2!1sen!2sit!4v1720098746128!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="lang-it"><i class="fas fa-exclamation"></i> Attenzione: l'autobus per il ritorno non sarà disponibile. Vi invitiamo, quindi, a comunicarci la necessità di trasporto a fine serata.</p>
+                        <p class="lang-en"><i class="fas fa-exclamation"></i> Attention: the bus will not be available for the return trip. We suggest you keep in touch with us, as to arrange end of day return trips.</p>
                         <br>
                         <!-- End of public transport section -->
                     </div>
                     <div class="section-tittle text-center mb-70">
-                        <h2><i class="fas fa-map-marked-alt"></i> Dove dormire</h2>
+                        <h2 class="lang-it"><i class="fas fa-map-marked-alt"></i> Dove dormire</h2>
+                        <h2 class="lang-en"><i class="fas fa-map-marked-alt"></i> Where to stay</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
                         <!-- Start of Santarcangelo section -->
                         <h3><i class="fas fa-bed"></i> Santarcangelo</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
-                        <p>Il posto più comodo per rimanere a dormire è sicuramente Santarcangelo. Sarete vicinissimi alla location del matrimonio, e potrete visitare la storica e bellissima Santarcangelo stessa, oltre che potervi facilmente spostare sia verso il mare a Rimini, sia verso l'entroterra.</p>
+                        <p class="lang-it">Il posto più comodo per rimanere a dormire è sicuramente Santarcangelo. Sarete vicinissimi alla location del matrimonio, e potrete visitare la storica e bellissima Santarcangelo stessa, oltre che potervi facilmente spostare sia verso il mare a Rimini, sia verso l'entroterra.</p>
+                        <p class="lang-en">The best place to stay is surely Santarcangelo. You'll be close to the wedding location, and you'll be able to visit the historic and wonderful Santarcangelo, or easily get to both the beach in Rimini, and the hinterland.</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9843.593835750626!2d12.448619749080095!3d44.06600866172465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salbergo%20santarcangelo!5e1!3m2!1sen!2sit!4v1720099362832!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <br>
                         <br>
@@ -129,21 +140,25 @@
                         <h3><i class="fas fa-bed"></i> Rimini</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
-                        <p>Anche Rimini è un'ottima scelta per dormire. Da Rimini potete raggiungere Santarcangelo, o direttamente Palazzo Marcosanti, in breve tempo, in treno o in macchina.</p>
+                        <p class="lang-it">Anche Rimini è un'ottima scelta per dormire. Da Rimini potete raggiungere Santarcangelo, o direttamente Palazzo Marcosanti, in breve tempo, in treno o in macchina.</p>
+                        <p class="lang-en">Rimini is a good choice to stay as well. From there, you can easily reach Santarcangelo, or Palazzo Marcosanti directly, in a short while, be it by train or car.</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12141.761011149456!2d12.575346671272454!3d44.06405170076677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salbergo!5e1!3m2!1sen!2sit!4v1720099851495!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <br>
                         <!-- End of Rimini section -->
                     </div>
                     <div class="section-tittle text-center mb-70">
-                        <h2><i class="fas fa-archway"></i> Cosa visitare</h2>
+                        <h2 class="lang-it"><i class="fas fa-archway"></i> Cosa visitare</h2>
+                        <h2 class="lang-en"><i class="fas fa-archway"></i> What to visit</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
                         <!-- Start of Santarcangelo section -->
                         <h3><i class="fa-solid fa-archway"></i> Santarcangelo</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
-                        <h4>Centro storico</h4>
+                        <h4 class="lang-it"> Centro storico</h4>
+                        <h4 class="lang-en"> Historic centre</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2415.843665080152!2d12.447171825814685!3d44.06307518966261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc0844eeb9775%3A0xec5fd93d23847a2e!2sArco%20Ganganelli!5e1!3m2!1sen!2sit!4v1720100501914!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>Un meraviglioso borgo storico, nato nel lontano medioevo. La mappa vi porterà di fronte all'Arco Ganganelli, nella piazza centrale, eretto alla fine del XVIII secolo.</p>
+                        <p class="lang-it">Un meraviglioso borgo storico, nato nel lontano medioevo. La mappa vi porterà di fronte all'Arco Ganganelli, nella piazza centrale, eretto alla fine del XVIII secolo.</p>
+                        <p class="lang-en">A magnificent old town centre, born in the middle ages. The map will take you to the Ganganelli arch, in the centre square, built at the end of the XVIII century.</p>
                         <br>
                         <br>
                         <!-- End of Santarcangelo section -->
@@ -153,28 +168,37 @@
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
                         <h4>Borgo San Giuliano</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.6875826567825!2d12.563181512200979!3d44.06496742558067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc3cc520bf9bb%3A0xebc12968efad38c5!2sBorgo%20San%20Giuliano!5e1!3m2!1sen!2sit!4v1720100780996!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>L'antico borgo di marinai e pescatori con le sue stradine acciottolate, case colorate e murales che raccontano storie di vita quotidiana e di personaggi famosi. Un vero e proprio tesoro nascosto, ricco di storia, cultura e tradizioni.</p>
-                        <h4>Arco d'Augusto</h4>
+                        <p class="lang-it">L'antico borgo di marinai e pescatori con le sue stradine acciottolate, case colorate e murales che raccontano storie di vita quotidiana e di personaggi famosi. Un vero e proprio tesoro nascosto, ricco di storia, cultura e tradizioni.</p>
+                        <p class="lang-en">An old town of fishermen and sailors, with cobblestone streets, colourful houses and wall paintings, narrating of daily life stories and famous people. A true hidden gem, rich in history, culture and traditions.</p>
+                        <h4 class="lang-it">Arco d'Augusto</h4>
+                        <h4 class="lang-en">Arch of Augustus</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7026.323902210663!2d12.568550912200664!3d44.05697262610142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc3a6b416296f%3A0x70f54f5061c1f4a6!2sArco%20di%20Augusto!5e1!3m2!1sen!2sit!4v1720100876508!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>Edificato nel 27 a.C. in onore di Cesare Ottaviano Augusto è il più antico degli archi romani superstiti e sorge nel punto di arrivo della via Flaminia (che collegava Roma a Rimini).</p>
-                        <h4>Ponte di Tiberio</h4>
+                        <p class="lang-it">Edificato nel 27 a.C. in onore di Cesare Ottaviano Augusto è il più antico degli archi romani superstiti e sorge nel punto di arrivo della via Flaminia (che collegava Roma a Rimini).</p>
+                        <p class="lang-en">Built in 27 BC, for Gaius Julius Caesar Augustus, it is the oldest of the surviving roman arches, and it stands at the end of the Flaminia road (connecting Rimini to Rome).</p>
+                        <h4 class="lang-it">Ponte di Tiberio</h4>
+                        <h4 class="lang-en">Tiberius' bridge</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.761304481668!2d12.561202412200933!3d44.06372502566153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc397f30421e3%3A0xdf054527bdfd0e5c!2sPonte%20di%20Tiberio%2C%2047921%20Rimini%20RN!5e1!3m2!1sen!2sit!4v1720100936765!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>Il ponte romano sul fiume Marecchia, l'antico Ariminus intorno al quale era sorto il primo insediamento, crea ancora oggi il collegamento tra la città e il suburbio (borgo San Giuliano).</p>
+                        <p class="lang-it">Il ponte romano sul fiume Marecchia, l'antico Ariminus intorno al quale era sorto il primo insediamento, crea ancora oggi il collegamento tra la città e il suburbio (borgo San Giuliano).</p>
+                        <p class="lang-en">A roman bridge on the Marecchia river, the old Ariminus around which the first settlements were born, still connects, to this day, the city and the suburbs (borgo San Giuliano).</p>
                         <br>
                         <!-- End of Rimini section -->
                         <!-- Start of Others section -->
-                        <h3><i class="fa-solid fa-archway"></i> Altri posti</h3>
+                        <h3 class="lang-it"><i class="fa-solid fa-archway"></i> Altri posti</h3>
+                        <h3 class="lang-en"><i class="fa-solid fa-archway"></i> Other places</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
                         <h4>San Leo</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33209.48095953272!2d12.328334234142897!3d43.91989339870037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132c91f5a117356f%3A0xe1efdab27edc0aec!2s47865%20San%20Leo%2C%20Province%20of%20Rimini!5e1!3m2!1sen!2sit!4v1720101086856!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>San Leo, meravigliosa capitale d’arte, citata da Dante Alighieri nella Divina Commedia, è il fulcro della regione storica del Montefeltro ed è la città che gli ha dato il nome. Nota per le sue vicende storiche e geopolitiche, location per film e documentari, meta turistica d’eccellenza, è la perla preziosa custodita dalla provincia di Rimini.</p>
+                        <p class="lang-it">San Leo, meravigliosa capitale d'arte, citata da Dante Alighieri nella Divina Commedia, è il fulcro della regione storica del Montefeltro ed è la città che gli ha dato il nome. Nota per le sue vicende storiche e geopolitiche, location per film e documentari, meta turistica d'eccellenza, è la perla preziosa custodita dalla provincia di Rimini.</p>
+                        <p class="lang-en">San Leo, quoted by non other than Dante Alighieri in the Divine Comedy, is the most important historical place in the region of Montefeltro, and the town who gave it its name. Famous for its historical and geopolitical events, being location for movies and documentaries, and important tourist attraction, it is one of the most precious gems in the whole of Rimini.</p>
                         <h4>San Marino</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.269376035541!2d12.449536220648724!3d43.93500997397462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cecaff18cbd3d%3A0x6b6f66a161abb58f!2sGuaita%20Tower!5e1!3m2!1sen!2sit!4v1720101141604!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>Una delle repubbliche più antiche al mondo, San Marino ha conservato gran parte della sua antica architettura. L'omonima capitale sorge sui pendii del monte Titano ed è conosciuta per il centro storico medievale circondato da mura e per le viuzze acciottolate. Sui tre picchi del monte sorgono le tre torri, fortezze risalenti all'XI secolo.</p>
+                        <p class="lang-it">Una delle repubbliche più antiche al mondo, San Marino ha conservato gran parte della sua antica architettura. L'omonima capitale sorge sui pendii del monte Titano ed è conosciuta per il centro storico medievale circondato da mura e per le viuzze acciottolate. Sui tre picchi del monte sorgono le tre torri, fortezze risalenti all'XI secolo.</p>
+                        <p class="lang-en">One of the oldest republics in the world, San Marino maintained most of its old architecture. The namesake capital stands next to the mountain Titano, and it is known for the historic town centre, its walls, and the cobblestone roads. On the three peaks of the mountain stand the three towers, fortresses, dating back to the XI century.</p>
                         <h4>Gradara</h4>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7040.425354532902!2d12.764008818929602!3d43.938006459631985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ce1afcb9a1073%3A0xe49e9f20f4ad2421!2s61012%20Gradara%2C%20Province%20of%20Pesaro%20and%20Urbino!5e1!3m2!1sen!2sit!4v1720101162967!5m2!1sen!2sit" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>La Rocca di Gradara e il suo Borgo Fortificato rappresentano una delle strutture medioevali meglio conservate delle Marche e d’Italia e le due cinte murarie che proteggono la Fortezza, la più esterna delle quali si estende per quasi 800 metri, la rendono anche una delle più imponenti.</p>
+                        <p class="lang-it">La Rocca di Gradara e il suo Borgo Fortificato rappresentano una delle strutture medioevali meglio conservate delle Marche e d'Italia e le due cinte murarie che proteggono la Fortezza, la più esterna delle quali si estende per quasi 800 metri, la rendono anche una delle più imponenti.</p>
+                        <p class="lang-en">The castle of Gradara, and its fortified town, are one of the best maintained medieval structures in the region of Marche, and the whole of Italy. The double line of walls protecting it, of which the external one is almost 800 meters long, also make it one of the most imposing.</p>
                         <br>
                         <!-- End of Others section -->
                     </div>
@@ -185,8 +209,10 @@
                     <div class="story-caption background-img mb-40" style="background-image: url(assets/img/gallery/story2.jpg);">
                         <div class="story-details">
                             <h4>Palazzo Marcosanti</h4>
-                            <h4>Sabato 28 Settembre 2024</h4>
-                            <p>Ore 17:00</p>
+                            <h4 class="lang-it">Sabato 28 Settembre 2024</h4>
+                            <h4 class="lang-en">Saturday 28th September 2024</h4>
+                            <p class="lang-it">Ore 17:00</p>
+                            <p class="lang-en">5:00 pm</p>
                         </div>
                     </div>
                 </div>
@@ -256,6 +282,9 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <!-- Language selector -->
+     <script src="./assets/js/language.js"></script>
     
 </body>
 </html>

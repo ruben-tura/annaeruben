@@ -6368,3 +6368,16 @@ del {
         width: 60vw;
     }
 }
+
+.lang-hidden {
+    display: none!important;
+}
+
+.flag {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
 </head>
 <body>
 <!-- Preloader Start -->
@@ -51,18 +52,15 @@
                             <!-- Main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>                              
-                                    <ul id="navigation">                                                          
+                                    <ul id="navigation">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="menu.html">Menu</a></li>
-                                        <li><a href="getting-there.html">Come arrivare</a></li>
-                                        <!-- <li><a href="blog.html">Informazioni utili</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="index.html#contact-us">Contattaci</a></li>
+                                        <li class="lang-it"><a href="getting-there.html">Come arrivare</a></li>
+                                        <li class="lang-en"><a href="getting-there.html">How to get here</a></li>
+                                        <li class="lang-it"><a href="index.html#contact-us">Contattaci</a></li>
+                                        <li class="lang-en"><a href="index.html#contact-us">Contact us</a></li>
+                                        <li><button onclick="setEnglish()" class="flag"><span class="fi fi-gb"></span></button></li>
+                                        <li><button onclick="setItalian()" class="flag"><span class="fi fi-it"></span></button></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -83,22 +81,51 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-70">
-                        <h2>Menu della cena</h2>
+                        <h2 class="lang-it">Menu della cena</h2>
+                        <h2 class="lang-en">Dinner menu</h2>
                         <img src="assets/img/gallery/tittle_img.png" alt="">
-                        <h3>Primi piatti</h3>
+                        <h3 class="lang-it">Primi piatti</h3>
+                        <h3 class="lang-en">First course</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
                         <ul>
-                            <li>Strozzapreti al ragù al coltello bianco con profumo al cedro</li>
+                            <li class="lang-it">Strozzapreti al ragù al coltello bianco con profumo al cedro</li>
+                            <li class="lang-en">Strozzapreti with ragù sauce and a hint of citron</li>
                             <li><br></li>
-                            <li>Ravioli alla burrata con pomodorini pachino e basilico</li>
+                            <li class="lang-it">Ravioli alla burrata con pomodorini pachino e basilico</li>
+                            <li class="lang-en">Ravioli with burrata, pachino tomatoes and basil</li>
                         </ul>
                         <br>
-                        <h3>Secondi piatti</h3>
+                        <h3 class="lang-it">Secondi piatti</h3>
+                        <h3 class="lang-en">Second course</h3>
                         <br>
                         <img src="assets/img/gallery/tittle_img2.png" alt="">
                         <ul>
-                            <li>Filettino di mora romagnola bardato con pancetta, mela caramellata e ristretto di sangiovese</li>
+                            <li class="lang-it">Filettino di mora romagnola bardato con pancetta, mela caramellata e ristretto di sangiovese</li>
+                            <li class="lang-en">Mora romagnola filet (regional pork meat), with bacon, caramelised apples and red wine reduction</li>
+                        </ul>
+                        <br>
+                        <h3 class="lang-it">Taglio torta</h3>
+                        <h3 class="lang-en">Cake cutting</h3>
+                        <br>
+                        <!-- <img src="assets/img/gallery/tittle_img2.png" alt=""> -->
+                        <img src="assets/img/gallery/tittle_img.png" alt="">
+                        <h3 class="lang-it">Menu bimbi</h3>
+                        <h3 class="lang-en">Kids menu</h3>
+                        <br>
+                        <img src="assets/img/gallery/tittle_img2.png" alt="">
+                        <ul>
+                            <li class="lang-it">Primo piatto al ragù</li>
+                            <li class="lang-en">First course with ragù</li>
+                            <li><br></li>
+                            <li class="lang-it">Cotoletta con patate fritte</li>
+                            <li class="lang-en">Breaded cutlet with chips</li>
+                            <li><br></li>
+                            <li class="lang-it"><i class="fas fa-exclamation"></i> Segnalateci eventuali allergie e intolleranze, o necessità di menu vegetariani/vegani e di menu bimbi.</li>
+                            <li class="lang-en"><i class="fas fa-exclamation"></i> Let us know about your allergies or food intolerances, or the necessity for vegetarian/vegan menu or kids menu.</li>
+                            <li><br></li>
+                            <li class="lang-it"><i class="fas fa-exclamation"></i> Non è purtroppo previsto servizio di animazione o di sorveglianza per bambini.</li>
+                            <li class="lang-en"><i class="fas fa-exclamation"></i> Entertainment or supervision for kids is unfortunately not provided.</li>
                         </ul>
                     </div>
                 </div>
@@ -108,8 +135,10 @@
                     <div class="story-caption background-img mb-40" style="background-image: url(assets/img/gallery/story2.jpg);">
                         <div class="story-details">
                             <h4>Palazzo Marcosanti</h4>
-                            <h4>Sabato 28 Settembre 2024</h4>
-                            <p>Ore 17:00</p>
+                            <h4 class="lang-it">Sabato 28 Settembre 2024</h4>
+                            <h4 class="lang-en">Saturday 28th September 2024</h4>
+                            <p class="lang-it">Ore 17:00</p>
+                            <p class="lang-en">5:00 pm</p>
                         </div>
                     </div>
                 </div>
@@ -179,6 +208,9 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <!-- Language selector -->
+     <script src="./assets/js/language.js"></script>
     
 </body>
 </html>
