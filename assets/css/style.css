@@ -3370,25 +3370,28 @@ hr {
     top: 17px;
     left: 16px;
     width: 94%;
+    height: -webkit-fill-available;
     /* height: 839px */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
         height: 94%;
+        height: -webkit-fill-available;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
         height: 94%;
+        height: -webkit-fill-available;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .contact-form .form-wrapper .shape-inner-flower .shpe2 {
         height: 94%;
-        width: 95%
+        width: 95%;
     }
 }
 
