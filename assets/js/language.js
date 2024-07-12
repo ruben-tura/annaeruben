@@ -5,7 +5,7 @@ window.onload = function () {
     const queryLang = urlParams.get('lang');
     //console.log(lang);
 
-    if (queryLang !== "") {
+    if (queryLang) {
         if (queryLang === "it") {
             document.querySelectorAll('.lang-en').forEach(elem => elem.classList.add("lang-hidden"));
         } else {
